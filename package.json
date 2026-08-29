@@ -1,0 +1,35 @@
+{
+  "name": "edunova",
+  "version": "1.0.0",
+  "description": "EduNova - Enterprise Online Learning Platform",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node server/db/seed.js",
+    "test": "node --test tests/*.test.js",
+    "validate": "python scripts/validate_platform.py",
+    "analytics": "python scripts/analytics_exporter.py"
+  },
+  "keywords": [
+    "education",
+    "lms",
+    "learning-platform",
+    "express",
+    "javascript",
+    "edtech"
+  ],
+  "author": "EduNova Team",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "supertest": "^6.3.4"
+  }
+}
